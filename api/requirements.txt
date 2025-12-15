@@ -3,3 +3,4 @@ uvicorn
 python-jose
 requests
 prometheus-fastapi-instrumentator
+python-jose[cryptography]

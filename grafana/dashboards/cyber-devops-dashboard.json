@@ -1,0 +1,14 @@
+{
+  "title": "Cyber-DevOps PME",
+  "panels": [
+    {
+      "type": "stat",
+      "title": "Requêtes HTTP",
+      "targets": [
+        {
+          "expr": "sum(http_requests_total)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+groups:
+- name: security-alerts
+  rules:
+  - alert: UnauthorizedAccess
+    expr: rate(http_requests_total{handler="/secure",status="4xx"}[1m]) > 5
+    for: 1m
+    labels:
+      severity: warning

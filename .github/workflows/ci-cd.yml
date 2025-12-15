@@ -1,0 +1,11 @@
+name: Cyber-DevOps CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build API
+      run: docker build -t pme/api ./api
